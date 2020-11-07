@@ -24,12 +24,12 @@ void pip(void) {
 }
 
 void pip_pip(void) {
-    pip(); delay(500); pip(); delay(500);
+    pip(); delay(333); pip(); delay(600);
 }
 
 void init_led(void) { // LED D13 support
     pinMode(13,1); // PA17 CPX
-    delay(3000);
+    delay(GUARD_TWO);
     pip_pip();
     delay(GUARD_TIME);
 }
@@ -47,7 +47,7 @@ void setup(void) {
     while (!Serial) { ; // wait for serial
         blink_m(); // blink something
     }
-    delay(9999); // 9.9 seconds
+    delay(GUARD_THREE);
     Serial.println("Hello from the cbuf project a - 7 Nov 2020.");
     Serial.println("\n functional program - validated. 11:39z\n");
 
