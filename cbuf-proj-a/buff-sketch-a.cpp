@@ -7,6 +7,7 @@
 
 #define RAPID_PROTO // fast dev cycle
 #include "nbuff-sketch-a.h"
+#define ITER 2222
 
 /*
 #define SLOW_VAL 3
@@ -51,7 +52,7 @@ void setup(void) {
     Serial.println("Hello from the cbuf project a - 7 Nov 2020.");
     Serial.println("\n functional program - validated. 11:39z\n");
 
-    for (int i=2222; i>0; i--) { // countdown
+    for (int i=ITER; i>0; i--) { // countdown
         delay(333);
         Serial.print(" mark ");
     }
