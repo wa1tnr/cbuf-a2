@@ -13,9 +13,14 @@ void init_led(void) { // LED D13 support
     delay(33);
 }
 
+void blink_m(void) {
+}
+
 void setup(void) {
     Serial.begin(115200);
-    while (!Serial); // wait
+    while (!Serial) { ; // wait for serial
+        blink_m(); // blink something
+    }
     delay(9999); // 9.9 seconds
     Serial.println("Hello from the cbuf project a - 7 Nov 2020.");
     Serial.println("\n functional program - validated. 11:39z\n");
