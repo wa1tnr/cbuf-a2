@@ -6,6 +6,7 @@
 #include <Arduino.h>
 
 #define SLOW_VAL 3
+#define GUARD_TIME 12333 // milliseconds
 #define LED 13
 #define blink_ON()  digitalWrite(LED,1)
 #define blink_OFF() digitalWrite(LED,0)
@@ -17,13 +18,15 @@ void pip(void) {
     delay(SLOW_VAL);
 }
 
+void pip_pip(void) {
+    pip(); delay(500); pip(); delay(500);
+}
+
 void init_led(void) { // LED D13 support
     pinMode(13,1); // PA17 CPX
-    delay(2000);
-    pip(); delay(500); pip();
-    delay(3000); // remove this
-    delay(3000); // remove this
-    delay(3000); // remove this
+    delay(3000);
+    pip_pip();
+    delay(GUARD_TIME);
 }
 
 void blink_m(void) {
