@@ -1,3 +1,17 @@
+### **UPSTREAM** code base for CircularBuffer
+
+# Sat Nov  7 11:16:41 UTC 2020
+
+https://github.com/rlogiacco/CircularBuffer.git
+
+From the original README.md, which is in the .zip
+and is unpacked, here, as well. -wa1tnr 7 Nov 2020
+
+ - -
+
+original README.md follows. -wa1tnr
+
+
 ### &#x26A0; **IMPORTANT**
  
 > Please, before submitting a support request read carefully this README and check if an answer already exists among [previously answered questions](https://github.com/rlogiacco/CircularBuffer/issues?q=label:question): do not abuse of the Github issue tracker.
