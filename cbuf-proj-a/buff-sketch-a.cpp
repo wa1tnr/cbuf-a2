@@ -5,11 +5,15 @@
 
 #include <Arduino.h>
 
+#include "nbuff-sketch-a.h"
+
+/*
 #define SLOW_VAL 3
 #define GUARD_TIME 12333 // milliseconds
 #define LED 13
 #define blink_ON()  digitalWrite(LED,1)
 #define blink_OFF() digitalWrite(LED,0)
+*/
 
 void pip(void) {
     blink_ON();
