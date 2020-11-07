@@ -10,12 +10,20 @@
 #define blink_ON()  digitalWrite(LED,1)
 #define blink_OFF() digitalWrite(LED,0)
 
-void init_led(void) { // LED D13 support
-    pinMode(13,1); // PA17 CPX
+void pip(void) {
     blink_ON();
     delay(SLOW_VAL);
     blink_OFF();
     delay(SLOW_VAL);
+}
+
+void init_led(void) { // LED D13 support
+    pinMode(13,1); // PA17 CPX
+    delay(2000);
+    pip(); delay(500); pip();
+    delay(3000); // remove this
+    delay(3000); // remove this
+    delay(3000); // remove this
 }
 
 void blink_m(void) {
