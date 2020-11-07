@@ -5,13 +5,13 @@
 
 #include <Arduino.h>
 
-#define blink_ON digitalWrite(13,1)
+#define blink_ON() digitalWrite(13,1)
 
 void init_led(void) { // LED D13 support
     pinMode(13,1); // PA17 CPX
     // digitalWrite(13,1);
     // test cpp macro here:
-    blink_ON;
+    blink_ON();
     delay(33);
     digitalWrite(13,0);
     delay(33);
