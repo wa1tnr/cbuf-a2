@@ -5,6 +5,7 @@
 
 #include <Arduino.h>
 
+#define RAPID_PROTO // fast dev cycle
 #include "nbuff-sketch-a.h"
 
 /*
