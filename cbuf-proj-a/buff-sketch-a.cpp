@@ -5,13 +5,12 @@
 
 #include <Arduino.h>
 
-    // LED D13 support
-void init_led(void) {
+void init_led(void) { // LED D13 support
     pinMode(13,1); // PA17 CPX
     digitalWrite(13,1);
-    delay(3333);
+    delay(33);
     digitalWrite(13,0);
-    delay(3333);
+    delay(33);
 }
 
 void setup(void) {
