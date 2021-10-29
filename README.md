@@ -7,6 +7,13 @@ https://github.com/rlogiacco/CircularBuffer.git
 From the original README.md, which is in the .zip
 and is unpacked, here, as well. -wa1tnr 7 Nov 2020
 
+
+# SEE ALSO
+
+https://github.com/Locoduino/RingBuffer
+
+https://www.arduino.cc/reference/en/libraries/ringbuffer/
+
  - -
 
 original README.md follows. -wa1tnr
